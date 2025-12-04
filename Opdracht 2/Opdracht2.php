@@ -42,9 +42,14 @@ $daysinmonth = date("t") ;
 echo "Deze maand, $month heeft $daysinmonth dagen";
 
 echo "<br>" ;
-$schrikkeljaarcontrole = date("L");
-echo "Is het een schrikkeljaar : $schrikkeljaarcontrole"; 
-echo " Dus nee 2025 is geen schrikkeljaar";
+if ($schrikkeljaarcontrole < 1)
+{
+    echo "Het jaar $jaartal is geen schrikkeljaar.";
+}
+else
+{
+    echo "Het jaar $jaartal is een schrikkeljaar";
+}
 
 
 ?>
